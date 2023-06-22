@@ -1,0 +1,172 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 5% 0;
+    background-color:  hsl(0, 100%, 74%);
+    background-image: url("./images/bg-intro-mobile.png");
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+main {
+    margin: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+/*color*/
+.container-title h1, p {
+    text-align: center;
+    color: white;
+}
+.container-title p {
+    margin: 30px 0 60px;
+    color: hsl(248, 18%, 91%);
+    font-weight: 400;
+}
+.container-head {
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgb(65, 60, 60);
+    padding: 20px 60px;
+    color: white;
+    background: hsl(248, 32%, 49%);
+    font-size: 0.9rem;
+}
+.tryit {
+    font-weight: 600;
+}
+.container-box {
+    box-shadow: 0 5px 5px rgb(65, 60, 60);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+}
+.caption {
+    font-size: 0.8rem;
+    color: hsl(246, 25%, 77%);
+}
+ .singup input {
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    color: hsl(243, 12%, 68%);
+} 
+  
+.btn input {
+    color: white;
+}
+.Btn {
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+    color: white;
+    background: rgb(25, 205, 154);
+    cursor: pointer;
+} 
+.Btn:hover {
+    background: rgb(77, 212, 174);
+}
+
+.singup div:focus {
+    border: 1px solid hsl(249, 10%, 26%);
+}
+.singup input[type="text"]:focus {
+    color: rgb(25, 25, 84);
+}
+.singup input[type="password"]:focus {
+    color: rgb(25, 25, 84);
+}
+.singup input[type="email"]:focus {
+    color: rgb(25, 25, 84);
+}
+
+.caption span {
+    color: red;
+}
+
+.container-title h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.singup-postn {
+    position: relative;
+}
+.error-img {
+    position: absolute;
+    right: 25px;
+    top: 23px;
+}
+.error-text {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: red;
+}
+::placeholder {
+    color: hsl(243, 12%, 68%);
+}
+::placeholder:focus {
+    background: red;
+    color: rgb(25, 25, 84);
+}  
+.error-img {
+    display: none;
+}
+
+.error-text {
+    display: none;
+}
+
+.invalid {
+    display: block;
+}
+
+/* .fname-error-img {
+    display: none;
+} */
+/* .fname-error-text {
+    display: none;
+} */
+
+
+@media screen and (min-width:375px) {
+    body {
+        background-image: url("./images/bg-intro-desktop.png");
+        margin: 5% 0;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 40% 45%;
+        align-items: center;
+        column-gap: 5%;
+        margin: 0 10rem;
+    }
+    .container-title h1 {
+        text-align: start;
+        font-size: 3.3rem;
+        font-weight: 600;
+        line-height: 3.3rem;
+    }
+    .container-title p {
+        text-align: start;
+    }
+    .container-box {
+        padding: 40px;
+    }
+}
